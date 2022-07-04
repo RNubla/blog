@@ -9,7 +9,7 @@ const posts = await $fetch('https://jsonplaceholder.typicode.com/posts')
 
 <template>
     <div>
-        <div class="hero  bg-base-200">
+        <div class="hero  bg-base-100">
             <div class="hero-content text-center">
                 <div class="max-w-md">
                     <h1 class="text-5xl font-bold">Hello there</h1>
@@ -27,7 +27,7 @@ const posts = await $fetch('https://jsonplaceholder.typicode.com/posts')
             <div class="col-span-4 md:col-span-3 lg:col-span-2">
                 <div class="flex flex-col">
                     <ul>
-                        <li class="mb-4" v-for="article in posts">
+                        <li class="mb-2" v-for="article in posts">
                             <Card :title="article.title" :firstSentence="article.body" :id="article.id"
                                 img-src="https://api.lorem.space/image/game?w=800&h=300" />
                         </li>

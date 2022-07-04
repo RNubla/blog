@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const props = defineProps({
-    id: String,
+    id: Number,
     title: String,
     firstSentence: String,
     imgSrc: String
@@ -9,7 +9,7 @@ const truncated = computed(() => { return props.firstSentence.length > 100 ? `${
 </script>
 
 <template>
-    <div class="card bg-base-200 shadow-md">
+    <div class="card bg-base-100 shadow-md">
         <figure><img :src="props.imgSrc" alt="Shoes" /></figure>
         <div class="card-body">
             <NuxtLink :to="`/article/${id}`" class="card-title">

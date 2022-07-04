@@ -1,10 +1,11 @@
 <template>
-    <div>
-        <Navbar />
-        <br />
-        <div class="mx-auto max-w-7xl md:px-2">
+
+    <div class="bg-base-200 flex flex-col min-h-screen">
+        <Navbar class="mb-2" />
+        <main class="mx-auto max-w-7xl md:px-2 flex-grow">
             <slot></slot>
-        </div>
+        </main>
+        <Footer />
     </div>
 </template>
 
